@@ -1,3 +1,4 @@
+![](https://github.com/azedeveloper/NanoCode/blob/main/src-tauri/icons/128x128.png)
 # NanoCode
 ## Minimalistic, Open-source and Light-weight code editor made in Tauri.
 
