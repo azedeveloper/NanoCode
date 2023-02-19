@@ -16,7 +16,7 @@
 ### Features:
 
 - Open and Save files with CTRL + O and CTRL + S.
-- Syntax Highlighting with the CodeMirror library.
+- Syntax Highlighting and a cool theme with the CodeMirror library.
 - The app is only 8.5mb at the moment!
 
 
@@ -32,7 +32,7 @@ NanoCode is not close to being finished yet, these are the stuff that I'm workin
 
 You can always DM me on Discord if you have any ideas: **AzE#8373**.
 
-### Donations
+### Donations:
 
 NanoCode is and always will remain free of charge, but if you are willing to donate  you can do it on my paypal.me:
 
