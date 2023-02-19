@@ -7,6 +7,8 @@
 *
 ****************************************************************************************************************************************************************/
 
+//This code is horrible, just yeah I'll fix it later.
+
 const invoke = window.__TAURI__.invoke;
 const { save, open } = window.__TAURI__.dialog;
 const { readTextFile } = window.__TAURI__.fs;
