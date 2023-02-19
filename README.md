@@ -1,7 +1,6 @@
-# Tauri + Vanilla
+![](https://i.ibb.co/7VB0T2J/image.png)
+## Minimalistic, Open-source and Light-weight code editor made in Tauri.
 
-This template should help get you started developing with Tauri in vanilla HTML, CSS and Javascript.
+This is just a very early beta build, it is only compatible for windows at the moment and probably has a lot of bugs.
 
-## Recommended IDE Setup
 
-- [VS Code](https://code.visualstudio.com/) + [Tauri](https://marketplace.visualstudio.com/items?itemName=tauri-apps.tauri-vscode) + [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer)
