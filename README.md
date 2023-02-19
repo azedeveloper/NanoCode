@@ -42,10 +42,16 @@ You can always DM me on Discord if you have any ideas: **AzE#8373**.
 
 ### Donations:
 
-NanoCode is and always will remain free of charge, but if you are willing to donate  you can do it on my paypal.me:
+NanoCode is and always will remain free of charge, but if you are willing to donate  you can do it on my paypal or buymeacoffe:
 
 ![](https://i.ibb.co/cyxrYdW/money-payment-paypal-icon-icon.png)
 
 [paypal.me/azedev](https://paypal.me/azedev)
+
+Or
+
+![](https://i.ibb.co/C0Z1GzS/download-22.png)
+
+[buymeacoffee.com/azedev](https://www.buymeacoffee.com/azedev)
 
 
