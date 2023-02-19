@@ -36,7 +36,8 @@ You can always DM me on Discord if you have any ideas: **AzE#8373**.
 
 NanoCode is and always will remain free of charge, but if you are willing to donate  you can do it on my paypal.me:
 
-[paypal.me/azedev](https://paypal.me/azedev)
 ![](https://i.ibb.co/cyxrYdW/money-payment-paypal-icon-icon.png)
+
+[paypal.me/azedev](https://paypal.me/azedev)
 
 
