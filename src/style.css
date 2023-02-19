@@ -1,0 +1,68 @@
+/****************************************************************************************************************************************************************
+*
+*  Copyright (c) AzE. All rights reserved.                                                                                                                    
+*                                                                                                                                                             
+*  This code is licensed for non-commercial use only. You may not publish, distribute, sublicense, and/or sell copies of the software for commercial purposes.
+*                                                                                                                                                             
+*
+****************************************************************************************************************************************************************/
+
+:root {
+    --bg-color: #212121;
+    --titlebar-filename-color: rgb(207, 207, 207);
+    --titlebar-button-background: rgb(72, 72, 72);
+    --titlebar-button-border: 2px white;
+    --min-button-hover-background: yellow;
+    --max-button-hover-background: rgb(0, 255, 0);
+    --close-button-hover-background: red;
+}
+body {
+    background-color: var(--bg-color);
+    margin: auto;
+    padding: 0;
+}
+@font-face {
+    font-family: 'OpenSans-Regular';
+    src: url(assets/font/OpenSans-Regular.ttf);
+}
+.titlebar {
+    height: fit-content;
+    user-select: none;
+    -webkit-user-select: none;
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.titlebar-filename {
+    color: var(--titlebar-filename-color);
+    left: 0;
+    float: left;
+    margin-right: auto;
+    margin-left: 9px;
+    font-family: 'OpenSans-Regular';
+    font-size: 11px;
+}
+.titlebar-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 15px;
+    height: 15px;
+    border-radius: 12px;
+    background: var(--titlebar-button-background);
+    border: var(--titlebar-button-border);
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.titlebar-button:hover.min {
+    background: var(--min-button-hover-background);
+}
+.titlebar-button:hover.max {
+    background: var(--max-button-hover-background);
+}
+.titlebar-button:hover.clo {
+    background: var(--close-button-hover-background);
+}

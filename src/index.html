@@ -1,0 +1,70 @@
+<!--
+   /****************************************************************************************************************************************************************
+*
+*  Copyright (c) AzE. All rights reserved.                                                                                                                    
+*                                                                                                                                                             
+*  This code is licensed for non-commercial use only. You may not publish, distribute, sublicense, and/or sell copies of the software for commercial purposes.
+*                                                                                                                                                             
+*
+****************************************************************************************************************************************************************/
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- Other -->
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!-- Page -->
+      <title>NanoCode</title>
+      
+      <!-- Meta Information -->
+      <meta content="NanoCode" property="og:title">
+      <meta content="Minimalist Light-weight code editor." property="og:description">
+      <meta content="https://nanocode.net" property="og:url">
+      <meta content="#000" data-react-helmet="true" name="theme-color">
+
+      <!-- JavaScript Includes -->
+      <script type="module" src="js/main.js" defer></script>
+      <script type="module" src="js/SaveLoad.js" defer></script>
+
+      <!-- CSS Includes -->
+      <link rel="stylesheet" href="style.css" />
+      <link rel="stylesheet" href="css/scrollBar.css">
+
+      <!-- CodeMirror Includes -->
+      <script src="lib/codemirror/lib/codemirror.js"></script>
+      <link href="lib/codemirror/lib/codemirror.css" rel="stylesheet">
+      <link rel="stylesheet" href="lib/codemirror/theme/material-darker.css"/>
+
+      <!-- Whoa, that's a lot of languages... (CodeMirror languages)-->
+      <script src="lib/codemirror/mode/javascript/javascript.js"></script>
+      <script src="lib/codemirror/mode/python/python.js"></script>
+      <script src="lib/codemirror/mode/clike/clike.js"></script>
+      <script src="lib/codemirror/mode/php/php.js"></script>
+      <script src="lib/codemirror/mode/swift/swift.js"></script>
+      <script src="lib/codemirror/mode/go/go.js"></script>
+      <script src="lib/codemirror/mode/ruby/ruby.js"></script>
+      <script src="lib/codemirror/mode/r/r.js"></script>
+      <script src="lib/codemirror/mode/lua/lua.js"></script>
+      <script src="lib/codemirror/mode/perl/perl.js"></script>
+      <script src="lib/codemirror/mode/groovy/groovy.js"></script>
+      <script src="lib/codemirror/mode/rust/rust.js"></script>
+      <script src="lib/codemirror/mode/dart/dart.js"></script>
+      <script src="lib/codemirror/mode/powershell/powershell.js"></script>
+      <script src="lib/codemirror/mode/sass/sass.js"></script>
+      <script src="lib/codemirror/mode/htmlmixed/htmlmixed.js"></script>
+      <script src="lib/codemirror/mode/css/css.js"></script>
+      <script src="lib/codemirror/mode/coffeescript/coffeescript.js"></script>
+   </head>
+   <body>
+      <div data-tauri-drag-region class="titlebar">
+         <div class="titlebar-filename">Untitled</div>
+      </div>
+    <br>
+      <textarea id="editor"></textarea>
+      <script src="js/nanocode.js" type="module"></script>
+   </body>
+</html>
