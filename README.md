@@ -6,7 +6,7 @@
 
 ### Information:
 
-This is a code editor made with [Tauri](https://tauri.app/), Vanilla JS and the [CodeMirror Library](https://codemirror.net/). 
+This is a code editor made with [Tauri](https://tauri.app/), [JavaScript](https://javascript.com) and the [CodeMirror Library](https://codemirror.net/). 
 It is actually my first ever project made with Tauri. 🎉
 The current version has only taken a couple of days to construct but I'm planning on making this a bigger project with better features.
 
