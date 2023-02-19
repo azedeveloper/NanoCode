@@ -4,6 +4,14 @@
 ![](https://i.ibb.co/YL1DWSs/image.png)
 
 
+### Download:
+
+- Go to the [website](https://azedeveloper.github.io/NanoCode)
+- Click the "Download" button.
+- Download and Open the MSI file.
+- Follow the install instructions.
+- You now have NanoCode installed on your system! 🎉
+
 ### Features:
 
 - Open and Save files with CTRL + O and CTRL + S.
