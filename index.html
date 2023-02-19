@@ -8,105 +8,96 @@
     <link rel="icon" href="src-tauri/icons/128x128.png">
 
     <style>
-        @font-face {
-            font-family: 'OpenSans';
-            src: url(src/assets/font/OpenSans-Regular.ttf);
-        }
-
-        body {
-            font-family: 'OpenSans';
-            background-color: #212121;
-        }
-        .wrapper {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            justify-content: center;
-            align-items: center;
-        }
-
-        .title {
-            display: flex;
-        }
-
-        .title-text {
-           
-            color: white;
-            font-weight: bold;
-            font-size: 4rem;
-            margin-left: 10px;
-        }
-
-        .title-image img {
-            width: 100px;
-            margin-right: 10px;
-        }
-
-        .subtitle-text {
-            color: rgb(187, 187, 187);
-            font-size: 1.1em;
-            align-items: center;
-            text-align: center;
-        }
-
-        .download {
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-        }
-
-        .download span {
-            color: rgb(187, 187, 187);
-            
-        }
-
-        .download #version {
-            color: rgb(253, 253, 253); 
-        }
-        .download-btn{
-				background: #231f1f;
-				border: 1px solid #2d2d2d;
-				border-radius: 10px;
-				padding: 10px 36px;
-				padding-left: 28px;
-				color: #aeaeae;
-				text-decoration: none;
-				display: inline-block;
-				font-size: 0.9rem;
-				text-align: center;
-				transition: 0.3s;
-				margin-top: 2px;				
-				display: flex;
-    			align-items: center;
-				width: 120px;
-				box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);
-		    }
-            .download-btn:hover{
-				background: #3a3535;
-				box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
-		    }
-		    .download-btn strong{
-		        color: white;
-		        font-size: 1rem;
-		    }
-		    .download-btn svg{
-				color: white;
-				width: 25px;
-				height: 25px;
-				vertical-align: bottom;
-				margin-right: 12px;
-		    }
+       @font-face {
+     font-family: 'OpenSans';
+     src: url(src/assets/font/OpenSans-Regular.ttf);
+}
+ body {
+     font-family: 'OpenSans';
+     background-color: #212121;
+}
+ .wrapper {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     justify-content: center;
+     align-items: center;
+}
+ .title {
+     display: flex;
+     text-decoration: none;
+}
+ .title-text {
+     color: white;
+     font-weight: bold;
+     font-size: 4rem;
+     margin-left: 10px;
+}
+ .title-image img {
+     width: 100px;
+     margin-right: 10px;
+}
+ .subtitle-text {
+     color: rgb(187, 187, 187);
+     font-size: 1.1em;
+     align-items: center;
+     text-align: center;
+}
+ .download {
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+}
+ .download span {
+     color: rgb(187, 187, 187);
+}
+ .download #version {
+     color: rgb(253, 253, 253);
+}
+ .download-btn{
+     background: #231f1f;
+     border: 1px solid #2d2d2d;
+     border-radius: 10px;
+     padding: 10px 36px;
+     padding-left: 28px;
+     color: #aeaeae;
+     text-decoration: none;
+     display: inline-block;
+     font-size: 0.9rem;
+     text-align: center;
+     transition: 0.3s;
+     margin-top: 2px;
+     display: flex;
+     align-items: center;
+     width: 120px;
+     box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);
+}
+ .download-btn:hover{
+     background: #3a3535;
+     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+}
+ .download-btn strong{
+     color: white;
+     font-size: 1rem;
+}
+ .download-btn svg{
+     color: white;
+     width: 25px;
+     height: 25px;
+     vertical-align: bottom;
+     margin-right: 12px;
+}
     </style>
 </head>
 <body>
 
     <div class="wrapper">
         <center> 
-        <div class="title">
+          <a class="title" href="https://github.com/azedeveloper/NanoCode">
             <div class="title-image"><img src="src-tauri/icons/128x128.png" alt=""></div>
             <div class="title-text">NanoCode</div>     
-        </div>
+        </a>
      <div class="subtitle-text">Minimalist, Open-source and Light-weight code editor.</div></center>
      <br>
      <br>
