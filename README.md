@@ -19,9 +19,9 @@
 - The app is only 8.5mb at the moment!
 
 
-### Not finished:
+### ⚠️ Not finished:
 
-**NanoCode is not close to being finished yet ⚠️, I'm planning on adding a lot of stuff such as:**
+**NanoCode is not close to being finished yet, I'm planning on adding a lot of stuff such as:**
 
 - LSP Support
 - Custom Themes and a Theme Maker
