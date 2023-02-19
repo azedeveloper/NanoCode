@@ -20,16 +20,23 @@
 - The app is only 8.5mb at the moment!
 
 
-### ⚠️ Not finished:
+### Checklist:
 
-**NanoCode is not close to being finished yet, I'm planning on adding a lot of stuff such as:**
+NanoCode is not close to being finished yet, these are the stuff that I'm working on:
 
-- LSP Support
-- Custom Themes and a Theme Maker
-- An in-built Terminal
-- A File Explorer
-- Better developer experience such as shortcuts and stuff.
+- [ ] LSP Support
+- [ ] Custom Themes and a Theme Maker
+- [ ] An in-built Terminal
+- [ ] A File Explorer
+- [ ] Better developer experience such as shortcuts and stuff.
 
 You can always DM me on Discord if you have any ideas: **AzE#8373**.
+
+### Donations
+
+NanoCode is and always will remain free of charge, but if you are willing to donate  you can do it on my paypal.me:
+
+[paypal.me/azedev](https://paypal.me/azedev)
+![](https://i.ibb.co/cyxrYdW/money-payment-paypal-icon-icon.png)
 
 
