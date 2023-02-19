@@ -1,4 +1,4 @@
-![](https://i.ibb.co/7R5znTg/download-21.png)
+# NanoCode
 ## Minimalistic, Open-source and Light-weight code editor made in Tauri.
 
 ![](https://i.ibb.co/YL1DWSs/image.png)
