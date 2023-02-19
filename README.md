@@ -10,7 +10,7 @@
 - Syntax Highlighting with the CodeMirror library.
 
 
-### Not finished.
+### Not finished:
 
 **NanoCode is not close to being finished yet ⚠️, I'm planning on adding a lot of stuff such as:**
 
