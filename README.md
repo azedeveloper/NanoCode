@@ -1,8 +1,6 @@
 ![](https://i.ibb.co/7VB0T2J/image.png)
 ## Minimalistic, Open-source and Light-weight code editor made in Tauri.
 
-This is just a very early beta build, it is only compatible for windows at the moment and probably has a lot of bugs.
-
 ![](https://i.ibb.co/YL1DWSs/image.png)
 
 
@@ -10,5 +8,18 @@ This is just a very early beta build, it is only compatible for windows at the m
 
 - Open and Save files with CTRL + O and CTRL + S.
 - Syntax Highlighting with the CodeMirror library.
+
+
+### Not finished.
+
+**NanoCode is not close to being finished yet ⚠️, I'm planning on adding a lot of stuff such as:**
+
+- LSP Support
+- Custom Themes and a Theme Maker
+- An in-built Terminal
+- A File Explorer
+- Better developer experience such as shortcuts and stuff.
+
+You can always DM me on Discord if you have any ideas: **AzE#8373**.
 
 
