@@ -18,7 +18,7 @@ const editor = CodeMirror.fromTextArea(document.getElementById("editor"), {
   theme: "material-darker",
 });
 
-editor.setSize("100%", "100%");
+editor.setSize("100%", "99vh");
 editor.setOption("placeholder", "Start typing here..");
 
 editor.on("change", () => {

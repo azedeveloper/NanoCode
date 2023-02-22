@@ -32,7 +32,17 @@
   .xterm {
     background-color: black !important;
   }
+
+  .editor-container {
+    position: relative;
+    height: 100%;
+    overflow: scroll !important;
+  }
   
+  #editor {
+    height: 100%;
+    overflow-y: auto !important;
+  }
 
   #terminal {
     height: 100%;
@@ -44,6 +54,8 @@ body {
     background-color: var(--bg-color);
     margin: auto;
     padding: 0;
+    overflow: hidden;
+    
 }
 @font-face {
     font-family: 'OpenSans-Regular';
@@ -154,4 +166,40 @@ body {
     color: rgb(158, 156, 156);
     font-weight: 200;
 }
+
+.CodeMirror {
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+  }
+
+  .file-manager {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 300px;
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px;
+  }
+  
+  .file-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .file-list li {
+    padding: 5px;
+  }
+  
+  .close-button {
+    margin-top: 10px;
+  }
+  
+  
+
+
 

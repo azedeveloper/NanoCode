@@ -8,21 +8,46 @@
   },
   "package": {
     "productName": "nanocode",
-    "version": "0.0.2"
+    "version": "0.0.3"
   },
   "tauri": {
     "allowlist": {
+     
       "all": true,
+      "globalShortcut": {
+        "all": true 
+      },
       "window": {
-        "all": false,
-        "close": true,
-        "hide": true,
-        "show": true,
+        "all": true, 
+        "create": true, 
+        "center": true,
+        "requestUserAttention": true,
+        "setResizable": true,
+        "setTitle": true,
         "maximize": true,
-        "minimize": true,
         "unmaximize": true,
+        "minimize": true,
         "unminimize": true,
-        "startDragging": true
+        "show": true,
+        "hide": true,
+        "close": true,
+        "setDecorations": true,
+        "setAlwaysOnTop": true,
+        "setSize": true,
+        "setMinSize": true,
+        "setMaxSize": true,
+        "setPosition": true,
+        "setFullscreen": true,
+        "setFocus": true,
+        "setIcon": true,
+        "setSkipTaskbar": true,
+        "setCursorGrab": true,
+        "setCursorVisible": true,
+        "setCursorIcon": true,
+        "setCursorPosition": true,
+        "setIgnoreCursorEvents": true,
+        "startDragging": true,
+        "print": true
       },
       "dialog": {
         "all": true,
@@ -41,7 +66,14 @@
         "renameFile": true,
         "exists": true,
         "scope": ["**"]
-      }
+      },
+      
+        "shell": {
+          "all": true, 
+          "execute": true, 
+          "sidecar": true, 
+          "open": true 
+        }
     },
     "bundle": {
       "active": true,
