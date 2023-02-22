@@ -23,6 +23,7 @@
  body {
      font-family: 'OpenSans';
      background-color: #212121;
+        display: none;
 }
  .wrapper {
      position: absolute;
@@ -113,6 +114,20 @@
 }
 
     </style>
+    <script>
+    // when the document is fully loaded
+    window.addEventListener('load', function() {
+        // select the body element and show it with a fade-in effect
+        document.querySelector('body').style.display = 'block';
+        document.querySelector('body').animate([
+            { opacity: 0 },
+            { opacity: 1 }
+        ], {
+            duration: 700, // set the duration of the animation to 0.5 seconds
+            fill: 'forwards' // keep the final state of the animation
+        });
+    });
+</script>
 </head>
 <body>
 
