@@ -1,5 +1,5 @@
 ![](https://github.com/azedeveloper/NanoCode/blob/main/src-tauri/icons/32x32.png)
-# NanoCode
+# [NanoCode](https://azedeveloper.github.io/NanoCode)
 ## Minimalistic, Open-source and Light-weight code editor made in Tauri.
 
 ![](https://i.ibb.co/YL1DWSs/image.png)
