@@ -4,8 +4,6 @@
     <h2 style="color: white; " class="white-text scaled-text">Minimalistic, Open-source and Light-weight code editor made in Tauri.</h2>
 </div>
 
-## Minimalistic, Open-source and Light-weight code editor made in Tauri.
-
 ![](https://i.ibb.co/YL1DWSs/image.png)
 
 ### Information:
