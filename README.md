@@ -1,7 +1,29 @@
 <div align="center" style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh;">
-    <img src="https://github.com/azedeveloper/NanoCode/blob/main/src-tauri/icons/32x32.png" alt="NanoCode logo" style="transform: scale(1.5);">
-    <h1 style="color: white; transform: scale(1.5);">NanoCode</h1>
+    <img src="https://github.com/azedeveloper/NanoCode/blob/main/src-tauri/icons/32x32.png" alt="NanoCode logo" class="scaled-image">
+    <h1 style="color: white; transform: scale(1.5);" class="white-text scaled-text">NanoCode</h1>
 </div>
+
+<style>
+.centered-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.scaled-image {
+  transform: scale(1.5);
+}
+
+.scaled-text {
+  transform: scale(1.5);
+}
+
+.white-text {
+  color: white;
+}
+</style>
 
 ## Minimalistic, Open-source and Light-weight code editor made in Tauri.
 
