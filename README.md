@@ -1,6 +1,6 @@
 <div align="center" style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh;">
     <img  width="200" src="https://github.com/azedeveloper/NanoCode/blob/main/src-tauri/icons/128x128.png" alt="NanoCode logo" class="scaled-image">
-    <h1 style="color: white; " class="white-text scaled-text">NanoCode</h1>
+    <h1 width="50" style="color: white; " class="white-text scaled-text">NanoCode</h1>
 </div>
 
 ## Minimalistic, Open-source and Light-weight code editor made in Tauri.
