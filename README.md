@@ -1,5 +1,5 @@
-<div align="center" width="500" style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh;">
-    <img src="https://github.com/azedeveloper/NanoCode/blob/main/src-tauri/icons/32x32.png" alt="NanoCode logo" class="scaled-image">
+<div align="center" style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh;">
+    <img  width="500" src="https://github.com/azedeveloper/NanoCode/blob/main/src-tauri/icons/32x32.png" alt="NanoCode logo" class="scaled-image">
     <h1 style="color: white; " class="white-text scaled-text">NanoCode</h1>
 </div>
 
