@@ -16,6 +16,8 @@ let currentPath = localStorage.getItem("currentPath"); // Retrieve the last open
 const editor = CodeMirror.fromTextArea(document.getElementById("editor"), {
   lineNumbers: true,
   theme: "material-darker",
+  autoIndent: true,
+  autoCloseBrackets: true,
 });
 
 editor.setSize("100%", "98vh");
