@@ -2,7 +2,7 @@
   "build": {
     "beforeDevCommand": "",
     "beforeBuildCommand": "",
-    "devPath": "../src",
+    "devPath": "http://localhost:3000",
     "distDir": "../src",
     "withGlobalTauri": true
   },

@@ -33,17 +33,6 @@
     background-color: black !important;
   }
 
-  .editor-container {
-    position: relative;
-    height: 100%;
-    overflow: scroll !important;
-  }
-  
-  #editor {
-    height: 100%;
-    overflow-y: auto !important;
-  }
-
   #terminal {
     height: 100%;
     width: 100%;
@@ -167,22 +156,69 @@ body {
     font-weight: 200;
 }
 
-.CodeMirror {
+  .main-container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  .file-manager {
+    display: none; 
+    padding: 0;
+    margin: 0;
+    font-family: 'OpenSans-Regular';
+    background-color: #1b1b1b;
+    color: var(--titlebar-filename-color);
+    padding-left: 8px;
+    overflow-y: auto;
+    z-index: 100;
+    position: relative;
+    overflow: auto; 
+    width: 300px;
+    min-width: 300px;
+}
+
+.file-icon {
+  width: 16px; /* Adjust size as needed */
+  height: 16px;
+  margin-right: 6px; /* Spacing between icon and text */
+  vertical-align: middle;
+  margin-bottom: 1px;
+}
+
+.folder-icon {
+  width: 16px; /* Adjust size as needed */
+  height: 16px;
+  margin-right: 6px; /* Spacing between icon and text */
+  vertical-align: middle;
+  margin-bottom: 1px;
+}
+
+
+.foldername {
+  margin-top: 3px;
+}
+
+  
+  .file-manager.visible {
+    display: block; /* Visible when toggled */
+  }
+  
+  .editor-container {
+    flex-grow: 1; /* Takes the remaining space */
+    position: relative;
+    height: 100%;
+  }
+  
+  #editor {
     height: 100%;
     width: 100%;
-    overflow: auto;
+    overflow-y: auto;
   }
+  
 
-  .file-manager {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 200px;
-    height: 300px;
-    background-color: white;
-    border: 1px solid black;
-    padding: 10px;
+  .visible {
+    display: block !important;
   }
   
   .file-list {
@@ -193,11 +229,21 @@ body {
   
   .file-list li {
     padding: 5px;
+    margin-left: 5px;
+  }
+
+  .file-list li:hover {
+    cursor: pointer;
   }
   
   .close-button {
     margin-top: 10px;
   }
+
+  .nested {
+    margin-left: 15px; /* Indent nested items */
+  }
+  
   
   
 

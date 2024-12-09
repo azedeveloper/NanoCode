@@ -66,16 +66,19 @@
       </div>
     <br>
     
-    <div class="file-manager">
-      <ul class="file-list">
-       fwa
-      </ul>
-      <button class="close-button">Close</button>
+    <div class="main-container">
+      <div class="file-manager">
+         <div style="display: flex;"><img class="folder-icon" style="margin-top: 6px;" src="assets/img/file/default_folder_opened.svg" alt=""><p class="foldername">EXPLORER</p></div>
+        <ul class="file-list" style="margin-top: -15px;">
+          <!-- Files will populate here -->
+        </ul>
+      </div>
+      
+      <div class="editor-container">
+        <textarea id="editor"></textarea>
+      </div>
     </div>
     
-    <div class="editor-container">
-      <textarea id="editor"></textarea>
-    </div>
    
      
       <div class="welcome-wrapper">
@@ -89,7 +92,6 @@
       </div>
       <script src="js/nanocode.js" type="module"></script>
       <script defer src="js/welcome.js"></script>
-      <script defer src="js/filemanager.js"></script>
 
    </body>
 </html>
