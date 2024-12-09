@@ -8,11 +8,13 @@
 
 ### Information:
 
-This is a code editor made with [Tauri](https://tauri.app/), [JavaScript](https://javascript.com) and the [CodeMirror Library](https://codemirror.net/). 📝
+
+It was made by [AzE](https://azedev.net/) (me) 👋
+
+Using [Tauri](https://tauri.app/), [JavaScript](https://javascript.com) and the [CodeMirror Library](https://codemirror.net/). 📝
 
 I recommend checking out the [documentation](https://azedev.gitbook.io/nanocode) before using it! 📖
 
-It was made by [AzE](https://azedev.net/) (me), a Game and Web developer located in Gothenburg, Sweden. 📌
 
 ### Download:
 
