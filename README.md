@@ -38,10 +38,10 @@ NanoCode is not close to being finished yet, these are the stuff that I'm workin
 - [X] A File Explorer
 - [ ] LSP Support
 - [ ] Custom Themes and a Theme Maker
-- [ ] An in-built Terminal
+- [ ] A terminal
 - [ ] Better developer experience such as shortcuts and stuff.
 
-You can always DM me on Discord if you have any ideas: **@albin_ze**.
+You can always DM me on Discord if you have any ideas: **@albin_ze**
 
 ### Donations:
 
