@@ -16,7 +16,7 @@ Using [Tauri](https://tauri.app/), [JavaScript](https://javascript.com) and the 
 I recommend checking out the [documentation](https://azedev.gitbook.io/nanocode) before using it! 📖
 
 
-### Download:
+### Download Instructions:
 
 - Go to the [website](https://azedeveloper.github.io/NanoCode)
 - Click the "Download" button.
@@ -41,7 +41,7 @@ NanoCode is not close to being finished yet, these are the stuff that I'm workin
 - [ ] An in-built Terminal
 - [ ] Better developer experience such as shortcuts and stuff.
 
-You can always DM me on Discord if you have any ideas: **AzE#8373**.
+You can always DM me on Discord if you have any ideas: **@albin_ze**.
 
 ### Donations:
 
