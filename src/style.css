@@ -229,20 +229,47 @@ body {
   
   .file-list li {
     padding: 5px;
-    margin-left: 5px;
-  }
+    margin-left: 5px; /* Creates space between items */
+    width: calc(100%); /* Subtract the margin from the full width */
+    box-sizing: border-box; /* Ensures padding and border are included in the width */
+}
 
-  .file-list li:hover {
+.file-list li:hover {
     cursor: pointer;
-  }
+    background-color: #a1a1a15e;
+    color: white;
+}
+
   
   .close-button {
     margin-top: 10px;
   }
 
-  .nested {
-    margin-left: 15px; /* Indent nested items */
+  .nested-container {
+    list-style: none;
+    padding-left: 20px; /* Indent for nested items */
+    margin: 0;
   }
+  
+  .nested-container li {
+    padding: 5px;
+    margin: 0; /* Prevent margin from interfering with hover effects */
+  }
+  
+  .nested-container li:hover {
+    background-color: #a1a1a15e;
+    cursor: pointer;
+  }
+  
+  .folder {
+    font-weight: normal;
+  }
+  
+  .file {
+    font-weight: normal;
+  }
+  
+  
   
   
   

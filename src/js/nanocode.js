@@ -94,94 +94,19 @@ const readFolderContents = async () => {
 const populateFileManager = async () => {
   if (!currentPath) return;
   try {
-    const files = await invoke("read_dir", { path: currentPath, recursive: false });
     const fileList = document.querySelector(".file-list");
     fileList.innerHTML = ""; // Clear existing file list
 
     // Update folder name
     updateFolderName();
 
-    files.forEach(file => {
-      const li = document.createElement("li");
-      const img = document.createElement("img");
-
-      img.src = "assets/img/file/default_file.svg";
-      img.alt = "File Icon";
-      img.classList.add("file-icon"); 
-
-      li.textContent = file.name;
-
-      if (file.is_dir) {
-        li.classList.add("folder");
-        img.src = "assets/img/file/default_folder.svg"; 
-
-        // Folder click handler to toggle open/closed state
-        li.addEventListener("click", async () => {
-          if (li.classList.contains("opened")) {
-            li.classList.remove("opened");
-            li.querySelectorAll(".nested").forEach(nested => nested.remove());
-            img.src = "assets/img/file/default_folder.svg"; // Change back to closed folder icon
-          } else {
-            li.classList.add("opened");
-            img.src = "assets/img/file/default_folder_opened.svg"; // Change to open folder icon
-
-            // Fetch the folder's contents and display them indented
-            const nestedFiles = await invoke("read_dir", { path: file.path, recursive: false });
-            nestedFiles.forEach(nestedFile => {
-              const nestedLi = document.createElement("li");
-              const nestedImg = document.createElement("img");
-
-              nestedImg.src = "assets/img/file/default_file.svg";
-              nestedImg.alt = "File Icon";
-              nestedImg.classList.add("file-icon"); 
-
-              nestedLi.textContent = nestedFile.name;
-              nestedLi.classList.add("nested"); // Add a class to style indentation
-
-              if (nestedFile.is_dir) {
-                nestedLi.classList.add("folder");
-                nestedImg.src = "assets/img/file/default_folder.svg"; 
-                nestedLi.addEventListener("click", () => {
-                  // Nested folder toggle logic can go here
-                });
-              } else {
-                nestedLi.classList.add("file");
-                nestedLi.addEventListener("click", async () => {
-                  const contents = await readTextFile(nestedFile.path);
-                  editor.setValue(contents);
-                  currentPath = nestedFile.path;
-                  localStorage.setItem("currentPath", currentPath);
-                  updateTitlebar(true);
-                  const extension = nestedFile.name.split(".").pop();
-                  updateEditorMode(extension);
-                });
-              }
-
-              nestedLi.prepend(nestedImg);
-              li.appendChild(nestedLi); // Add nested file to the parent folder
-            });
-          }
-        });
-      } else {
-        li.classList.add("file");
-        li.addEventListener("click", async () => {
-          const contents = await readTextFile(file.path);
-          editor.setValue(contents);
-          currentPath = file.path;
-          localStorage.setItem("currentPath", currentPath);
-          updateTitlebar(true);
-          const extension = file.name.split(".").pop();
-          updateEditorMode(extension);
-        });
-      }
-
-      li.prepend(img);
-      fileList.appendChild(li);
-    });
+    // Render the root folder's contents
+    await renderFolderContents(currentPath, fileList);
   } catch (e) {
     console.error("Error populating file manager:", e);
   }
 };
+
 
 
 
@@ -281,3 +206,66 @@ function getLanguageName(extension) {
 
   return languageMap[extension.toLowerCase()] || null;
 }
+
+const renderFolderContents = async (folderPath, container) => {
+  try {
+    const files = await invoke("read_dir", { path: folderPath, recursive: false });
+
+    files.forEach(file => {
+      const li = document.createElement("li");
+      const img = document.createElement("img");
+
+      img.src = "assets/img/file/default_file.svg";
+      img.alt = "File Icon";
+      img.classList.add("file-icon");
+
+      li.textContent = file.name;
+
+      if (file.is_dir) {
+        li.classList.add("folder");
+        img.src = "assets/img/file/default_folder.svg";
+
+        // Click handler for folders
+        li.addEventListener("click", async (event) => {
+          event.stopPropagation(); // Prevent parent folder click events
+
+          if (li.classList.contains("opened")) {
+            li.classList.remove("opened");
+            const nestedContainer = li.querySelector("ul");
+            if (nestedContainer) nestedContainer.remove();
+            img.src = "assets/img/file/default_folder.svg"; // Closed folder icon
+          } else {
+            li.classList.add("opened");
+            img.src = "assets/img/file/default_folder_opened.svg"; // Opened folder icon
+
+            // Create a nested container for this folder's contents
+            const nestedContainer = document.createElement("ul");
+            nestedContainer.classList.add("nested-container");
+
+            // Recursively render folder contents
+            await renderFolderContents(file.path, nestedContainer);
+
+            li.appendChild(nestedContainer);
+          }
+        });
+      } else {
+        li.classList.add("file");
+        li.addEventListener("click", async (event) => {
+          event.stopPropagation(); // Prevent folder click events
+          const contents = await readTextFile(file.path);
+          editor.setValue(contents);
+          currentPath = file.path;
+          localStorage.setItem("currentPath", currentPath);
+          updateTitlebar(true);
+          const extension = file.name.split(".").pop();
+          updateEditorMode(extension);
+        });
+      }
+
+      li.prepend(img);
+      container.appendChild(li);
+    });
+  } catch (e) {
+    console.error("Error rendering folder contents:", e);
+  }
+};
