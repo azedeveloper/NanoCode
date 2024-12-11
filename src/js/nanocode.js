@@ -2,7 +2,7 @@ const invoke = window.__TAURI__.invoke;
 const { save, open } = window.__TAURI__.dialog;
 const { readTextFile } = window.__TAURI__.fs;
 
-let currentPath = localStorage.getItem("currentPath"); // Retrieve the last opened file path from local storage
+let currentPath = localStorage.getItem("currentPath"); 
 
 const editor = CodeMirror.fromTextArea(document.getElementById("editor"), {
   lineNumbers: true,
@@ -40,7 +40,7 @@ const saveFileContents = async () => {
 
     await invoke("save_file", { path: savePath, contents: editor.getValue() });
     currentPath = savePath;
-    localStorage.setItem("currentPath", currentPath); // Save the current file path to local storage
+    localStorage.setItem("currentPath", currentPath); 
     localStorage.setItem("lastSavedContents", editor.getValue());
     updateTitlebar(true);
     const extension = currentPath.split(".").pop();
@@ -60,7 +60,7 @@ const readFileContents = async () => {
     const contents = await readTextFile(selectedPath);
     editor.setValue(contents);
     currentPath = selectedPath;
-    localStorage.setItem("currentPath", currentPath); // Save the current file path to local storage
+    localStorage.setItem("currentPath", currentPath); 
     localStorage.setItem("lastSavedContents", contents);
     updateTitlebar(true);
     const extension = currentPath.split(".").pop();
@@ -80,7 +80,7 @@ const readFolderContents = async () => {
 
     if (!selectedPath) return;
     currentPath = selectedPath;
-    localStorage.setItem("currentPath", currentPath); // Save the current folder path to local storage
+    localStorage.setItem("currentPath", currentPath);
 
     // Update folder name
     updateFolderName();
@@ -95,12 +95,10 @@ const populateFileManager = async () => {
   if (!currentPath) return;
   try {
     const fileList = document.querySelector(".file-list");
-    fileList.innerHTML = ""; // Clear existing file list
+    fileList.innerHTML = "";
 
-    // Update folder name
     updateFolderName();
 
-    // Render the root folder's contents
     await renderFolderContents(currentPath, fileList);
   } catch (e) {
     console.error("Error populating file manager:", e);
@@ -152,10 +150,15 @@ window.onload = async () => {
 
 const fileManager = document.querySelector('.file-manager');
 const fileList = fileManager.querySelector('.file-list');
+const terminalCon = document.querySelector('#terminal-container');
 
 
 function toggleFileManager() {
   fileManager.classList.toggle('visible');
+}
+
+function toggleTerminal() {
+  terminalCon.classList.toggle('visible');
 }
 
 document.addEventListener("keydown", (e) => {
@@ -171,6 +174,9 @@ document.addEventListener("keydown", (e) => {
   } else if (e.ctrlKey && e.key === "f") {
     e.preventDefault();
     readFolderContents();
+  } else if (e.ctrlKey && e.key === "t") {
+    e.preventDefault();
+    toggleTerminal();
   }
 });
 
